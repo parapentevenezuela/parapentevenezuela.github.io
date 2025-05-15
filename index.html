@@ -21,8 +21,22 @@
       body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
       
       header, footer { background-color: #333; color: #fff; text-align: center; padding: 1rem 0; }
+	  header {  position: sticky;  top: 0;  z-index: 100;}
+	  
       nav a { color: #fff; text-decoration: none; margin: 0 1rem; font-weight: bold; }
-      
+      .cta-button {
+  display: inline-block;
+  background-color: #ff5722;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+  background-color: #e64a19;
+}
       main { padding: 20px; }
       .container { max-width: 1000px; margin: auto; }
       section { margin-bottom: 2rem; }
@@ -40,6 +54,8 @@
         color: #fff;
         border-radius: 5px;
       }
+	  
+	  
       
       /* Galería y posts de Instagram */
       .instagram-gallery {
@@ -109,6 +125,28 @@
         }
       }
     </script>
+	
+	<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "LocalBusiness",
+    "name": "Vive Parapente La Guaira Galipan"
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "4.95",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Cliente Satisfecho"
+  },
+  "reviewBody": "Excelente experiencia en vuelo, altamente recomendado."
+}
+</script>
     
     <!-- Datos estructurados para Preguntas Frecuentes (FAQPage) -->
     <script type="application/ld+json">
@@ -166,7 +204,7 @@
     <header>
       <div class="container">
         <h1>Parapente en Venezuela</h1>
-        <nav>
+        <nav role="navigation" aria-label="Menú principal">
           <a href="#informacion">Información</a>
           <a href="#reseñas">Reseñas</a>
           <a href="#instagram">Instagram</a>
@@ -261,14 +299,21 @@
             </div>
 			<!-- Video 3 -->
             <div class="insta-post">
-              <a href="https://www.instagram.com/p/DIhqn4bSNub/" target="_blank" rel="noopener">
+              <!--<a href="https://www.instagram.com/p/DIhqn4bSNub/" target="_blank" rel="noopener">
                 <img loading="lazy" src="https://i.imgur.com/aVHD1So.png" alt="Aterrizaje al amanecer">
               </a>
-              <p>Aterrizaje al amanecer</p>
+              <p>Aterrizaje al amanecer</p>-->
+			  <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DIhqn4bSNub/" data-instgrm-version="14" style="background:#FFF; border:0; margin: 1px; max-width:540px; min-width:326px; padding:0;">
+			</blockquote>
+			<script async src="//www.instagram
             </div>
+			
+			.com/embed.js"></script>
           </div>
         </section>
-        
+		
+        <a href="http://wa.me/584122590089?msg=hola,%20vengo%20de%20github%20IA%20y%20quiero%20mas%20info" target="_blank" class="cta-button" >Reserva Ahora</a>
+
         <!-- Preguntas Frecuentes (FAQ) -->
         <section id="faq">
           <h2>Preguntas Frecuentes</h2>
